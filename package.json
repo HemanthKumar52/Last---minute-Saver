@@ -1,0 +1,21 @@
+{
+  "name": "clutch",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Clutch — the AI deadline-survival companion. Reminders tell you what to do. Clutch does the first step with you.",
+  "packageManager": "pnpm@10.31.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "sharp"]
+  },
+  "scripts": {
+    "web": "pnpm --filter @clutch/web dev",
+    "build:web": "pnpm --filter @clutch/web build",
+    "start:web": "pnpm --filter @clutch/web start",
+    "lint:web": "pnpm --filter @clutch/web lint",
+    "mobile": "pnpm --filter @clutch/mobile start",
+    "test:core": "pnpm --filter @clutch/core test"
+  }
+}

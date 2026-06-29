@@ -1,0 +1,32 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# builds
+.next/
+out/
+dist/
+build/
+.expo/
+.turbo/
+
+# env
+.env
+.env*.local
+!.env.example
+
+# convex
+.convex/
+
+# misc
+.DS_Store
+*.log
+npm-debug.log*
+pnpm-debug.log*
+coverage/
+*.tsbuildinfo
+.vercel
+
+# agent/assistant notes (kept local, not published)
+CLAUDE.md
+**/CLAUDE.md
